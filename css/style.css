@@ -1,0 +1,600 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar .logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: block;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+section {
+  padding: 100px 0;
+  background-color: #122e44;
+}
+
+.section_title {
+  margin-bottom: 30px;
+}
+.section_title h2 {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  transition: all 0.5s ease-in-out;
+}
+.section_title h2:hover {
+  background-color: #24caac;
+}
+
+/*HEADER*/
+header {
+  background: rgb(44, 37, 37);
+  border-bottom: 1px solid rgba(128, 0, 0, 0.801);
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  padding: 10px 0;
+}
+
+.nav_links {
+  display: flex;
+}
+
+.nav_links li a {
+  margin-left: 15px;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav_links li a:hover {
+  background: #24caac;
+}
+
+.logo h2 a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#menu_bar {
+  display: none;
+}
+/*!Anasayfa*/
+.inner_anasayfa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 70px;
+}
+
+.child_anasayfa {
+  flex-basis: 45%;
+}
+
+.child_anasayfa h1 {
+  font-size: 50px;
+  color: #24caac;
+}
+.span_child {
+  color: #e0376f;
+}
+
+.child_anasayfa p {
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+.child_anasayfa img {
+  border-radius: 75%;
+}
+
+.btn {
+  background: #24caac;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: #fff;
+  border: 1px solid black;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: transparent;
+  letter-spacing: 4px;
+}
+
+/*Yazılımlar*/
+
+.innersoftware {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-between;
+  margin: 0 auto;
+  color: black;
+}
+
+.innersoftware_child {
+  flex-basis: 31%;
+  color: black;
+  padding: 25px 20px;
+  background: rgba(55, 65, 80, 0.281);
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.innersoftware_child:hover {
+  border: 1px solid #24caac;
+}
+
+.innersoftware_child .icon {
+  font-size: 25px;
+  color: #24caac;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.innersoftware_child h3 {
+  font-size: 20px;
+  margin: 5px 0;
+}
+.innersoftware_child p {
+  font-size: 16px;
+}
+
+/*sertifiklarım*/
+
+.inner_courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.child_courses {
+  flex-basis: 24%;
+  color: #fff;
+  padding: 20px 10px 20px 10px;
+  border: 1px solid transparent;
+  transition: 0.3s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.child_courses:hover {
+  border: 1px solid #24caac;
+}
+
+.child_courses .detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.child_courses .detail ul {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 35%;
+}
+
+.child_courses .detail ul i {
+  color: gold;
+}
+
+/*başarılar*/
+
+.inner_achivement {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.child_achivement {
+  flex-basis: 40%;
+}
+
+.inner_achivement img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 60%;
+}
+
+.child_achivement2 {
+  flex-basis: 46%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.single_detail {
+  flex-basis: 48%;
+  padding: 40px;
+  color: #fff;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.single_detail:hover {
+  transform: scale(1.03);
+}
+
+.sd_1 {
+  background: #eaa023;
+  margin-bottom: 20px;
+}
+.sd_2 {
+  background: #e91e63;
+  margin-bottom: 20px;
+}
+.sd_3 {
+  background: #24caac;
+}
+.sd_4 {
+  background: #2f363e;
+}
+
+/*Hakkımda*/
+
+.inner_testi {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.child_testi {
+  flex-basis: 46%;
+  margin-bottom: 30px;
+}
+
+.testi_img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.testi_img img {
+  border-radius: 50%;
+}
+
+.test_name {
+  color: #24caac;
+  margin: 10px 0;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.test_name:hover {
+  text-decoration: underline;
+}
+
+/*İletişim*/
+
+.inner_contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.child_contact {
+  flex-basis: 45%;
+}
+.inner_contact .child_contact img {
+  border-radius: 55%;
+}
+
+.child_contact form {
+  padding: 50px 40px;
+  background: #2f363e;
+  border-radius: 5px;
+}
+
+.child_contact form input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #24292d;
+  border: none;
+  resize: none;
+  border-radius: 25px;
+  transition: 0.3s ease-in;
+}
+
+.child_contact form input,
+textarea:focus {
+  color: #fff;
+}
+
+.child_contact form input:focus {
+  letter-spacing: 1px;
+}
+
+.child_contact form textarea:focus {
+  letter-spacing: 1px;
+}
+
+.child_contact form :last-child {
+  margin-bottom: 0;
+  background-color: #24caac;
+  border: 1px solid #24caac;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.child_contact form input:last-child:hover {
+  background: transparent;
+  color: #fff;
+}
+
+/*footer*/
+
+.inner_footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.child_footer {
+  flex: 1;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.child_footer h3 {
+  color: #ffcc00;
+  font-size: 1.5em;
+}
+
+.child_footer p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.footer_social {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer_social li {
+  margin-right: 10px;
+}
+
+.footer_social a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+.child_footer h3 {
+  margin-bottom: 10px;
+}
+
+.quick_links {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.quick_links a {
+  color: rgb(177, 48, 48);
+  text-decoration: none;
+  font-size: 1.2em;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.quick_links a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.footer_contact {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.footer_contact li {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.footer_contact i {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 770px) {
+  .navbar {
+    width: 90%;
+  }
+  .logo h2 a {
+    font-size: 20px;
+  }
+  #menu_bar {
+    display: grid;
+    color: #fff;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    border: 1px solid #fff;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .nav_links {
+    flex-direction: column;
+    position: absolute;
+    background: #24292d;
+    width: 100%;
+    left: 0;
+    padding: 0;
+    display: none;
+  }
+  .nav_links.show {
+    display: flex;
+  }
+
+  .nav_links li a {
+    border-bottom: 1px solid #fff;
+    display: block;
+    border-radius: 0;
+    padding: 10px 0;
+    margin: 0 20px;
+  }
+
+  .nav_links li:last-child a {
+    border-radius: none;
+  }
+  .inner_anasayfa {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .child_anasayfa {
+    flex-basis: 100%;
+  }
+  .child_anasayfa:last-child {
+    margin-bottom: 20px;
+  }
+
+  .child_anasayfa h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .child_anasayfa p {
+    font-size: 20px;
+  }
+
+  /*yazılımlar*/
+
+  .innersoftware_child {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+
+  /*sertifikalarım*/
+
+  .child_courses {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+
+  /*Başarılarım*/
+  .child_achivement {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+
+  .single_detail {
+    flex-basis: 100%;
+  }
+  .child_achivement2 .sd_3 {
+    margin-bottom: 20px;
+  }
+
+  /*hakkımda*/
+  .child_testi {
+    flex-basis: 100%;
+    margin-bottom: 40px;
+  }
+  .child_testi:last-child {
+    margin-bottom: 0;
+  }
+
+  /*iletişim*/
+
+  .child_contact {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+
+  /*footer*/
+
+  /* Footer stil */
+  .inner_footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .child_footer {
+    text-align: center;
+    margin-bottom: 20px;
+    flex: 1;
+  }
+
+  /* İletişim bilgileri stil */
+  .footer_contact {
+    list-style: none;
+    padding: 0;
+  }
+
+  /* Sosyal medya ikonları stil */
+  .footer_social {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer_social li {
+    margin-right: 10px;
+  }
+}
