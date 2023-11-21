@@ -21,4 +21,4 @@ Contact:** A contact form for those who want to reach you.
 
 <h2> SCREENSHOT </h2>
 
-![](website.gif)
+![](/website.gif)
